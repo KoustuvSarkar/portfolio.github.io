@@ -1,0 +1,371 @@
+/* ******GOOGLE FONTS****** */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pattaya&display=swap');
+
+/* *******COMMON CSS******* */
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: 1s;  
+    box-sizing: border-box;
+}
+
+.sec_about > h2 , .sec_work > h2, .serv_sec>h2, .con_sec>h2{
+    font-family: "Pattaya", sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* ******NAVIGATION BAR******* */
+.main_menu{
+    display: flex;
+    padding: 3vh;
+    background: rgb(132, 132, 172);
+    /* opacity: 0.8; */
+}
+
+.logo{
+    font-family: "Odibee Sans", cursive;
+    font-size: 3.5em;
+    color: #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.logo:hover{
+   color: #111;
+   transform: rotate(820deg);
+   text-decoration: underline;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+    margin-left: auto;
+}
+
+.list-items{
+    padding: 20px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.list-items >a{
+    color: #fff;
+    transition: 1s all ease;
+}
+
+.list-items >a:hover{
+    cursor: pointer;
+    color: rgb(5, 5, 5);
+    transition: 1s ease all;
+}
+
+.icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.menu-btn{
+    margin-left: auto;
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+/* ******ABOUT SECTION********** */
+.wrapper{
+    display: flex;
+    font-size: 1.5em;
+    padding-top: 20px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.picure_person >img{
+    height: 250px;
+    width: 250px;
+    margin-top: 3vh;
+    border-radius: 50%;
+    margin-left: 2.5em;
+}
+
+.about_text{
+	width: 65%;
+	margin-top:2%; 
+    margin-left: 30px;
+    text-align: center;
+
+}
+
+.about_text> .text_cont> p{
+    font-size: 20px;
+	color: #111;
+}
+
+/* SKILL BAR CSS-----> */
+.skills_bar{
+    background: #ffff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.skills_bar> .bar{
+    margin: 20px 0;
+}
+
+.bar >.info >span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.skills_bar > .bar> .progress_line{
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    position: relative;
+}
+
+.bar> .progress_line > span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: #6665ee;
+    border-radius: 10px;
+}
+
+.bar> .progress_line.html > span{
+    width: 90%;
+}
+
+.bar> .progress_line.css > span{
+    width: 70%;
+}
+
+.bar> .progress_line.boots > span{
+    width: 65%;
+}
+
+.bar> .progress_line.javasc > span{
+    width: 75%;
+}
+
+.bar> .progress_line > span::before{
+    position: absolute;
+    content: "";
+    height: 0; 
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.bar> .progress_line > span::after{
+    position: absolute;
+    right: 0;
+    top: -25px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 1px 8px;
+}
+
+.bar> .progress_line.html > span::after{
+    content: "90%";
+}
+
+.bar> .progress_line.css > span::after{
+    content: "70%";
+}
+
+.bar> .progress_line.boots > span::after{
+    content: "65%";
+}
+
+.bar> .progress_line.javasc > span::after{
+    content: "75%";
+}
+
+/* *******WORK SECTION********** */
+
+.sec_work{
+    background-color: rgb(132, 132, 172) ;
+    padding-top: 5px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec_work>.container> img {
+    height: 200px;
+    width:350px;
+    margin:10px;
+    transition: all 0.5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+/* ********SERVICE SECTION******** */
+
+.serv_sec{
+    overflow-x: hidden;
+}
+
+.serv_container> .serv_text{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.imgsetting{
+    border-radius: 50%;
+    height:70px;
+    width: 70px;
+    background-color: rgb(132, 132, 172) ;
+}
+
+.fa-desktop{
+    margin: 20px;
+}
+
+.fa-code{
+    margin: 20px;
+}
+
+.fa-address-book{
+    margin: 20px;
+}
+
+.icon_text{
+    text-align: center;
+    font-family: "Pattaya", sans-serif;
+}
+
+.icon_text>h3{
+    margin-top: 10px;
+}
+
+
+/* ******Contact Section********** */
+.con_sec{
+    background-color: rgb(132, 132, 172);
+    padding-top: 5px;
+    font-family: "Pattaya", sans-serif;
+}
+
+/* Social Icons--> */
+.social_icons a{
+    color: #111;
+    text-decoration: none;
+    transition: none;
+}
+
+.social_icons a:hover{
+    color: white;
+}
+
+/* ******Footer Setion****** */
+.footer{
+    color: #111;
+    font-family: "Pattaya", sans-serif;
+    padding-top: 5px;
+    font-size: 12px;
+    box-shadow:  0 -3px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ******MEDIA QUERY******* */
+@media screen and (max-width:750px) {
+    .menu_items{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: rgb(132, 132, 172);
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .menu_items.active{
+        left: 0;
+    }
+    .wrapper{
+        display: block;
+    }
+    .about_text{
+        width: 85%;
+    }
+    .skills_bar{
+        width: auto;
+    }  
+}
+
+@media screen and (max-width:800px){
+    .picure_person >img{
+        margin-top: 1em;
+        height: 380px;
+    }  
+    .text_cont{
+        font-size: 0.5rem !important;
+    }  
+}
+
+@media screen and (max-width:750px) and (min-width:700px){
+    .picure_person >img{
+        margin-left: 10em;
+    }   
+}
+
+@media screen and (max-width: 699px) and (min-width:620px){
+    .picure_person >img{
+        margin-left: 9em;
+    }   
+}
+
+@media screen and (max-width: 619px) and (min-width:590px){
+    .picure_person >img{
+        margin-left: 8em;
+    }   
+}
+
+@media screen and (max-width: 589px) and (min-width:540px){
+    .picure_person >img{
+        margin-left: 7em;
+    }   
+}
+
+@media screen and (max-width: 539px) and (min-width: 450px){
+    .picure_person >img{
+        margin-left: 6em;
+    }   
+}
